@@ -1,0 +1,9 @@
+name: testing workflow
+on: workflow_dispatch
+jobs:
+  testactions:
+    runs-on: ubuntu-latest
+      steps:
+        - name: test action
+          uses: actions/checkout@v3
+
