@@ -6,4 +6,8 @@ jobs:
     steps:
        - name: test action
          uses: actions/checkout@v3
-
+       - name: list downloaded directory
+         run: |
+            echo $GITHUB_WORKSPACE
+            ls -ltr $GITHUB_WORKSPACE
+              
